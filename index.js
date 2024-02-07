@@ -84,7 +84,7 @@ function drawBricks() {
 function trackScore() {
     ctx.font = 'bold 16px sans-serif';
     ctx.fillStyle = '#333';
-    ctx.fillText('Pisteet : ' + score, 8, 24);
+    ctx.fillText('Points : ' + score, 8, 24);
 }
 
 
@@ -99,7 +99,7 @@ function hitDetection() {
                     score++;
                     
                     if (score === rowCount * columnCount) {
-                        alert('Sinä voitit!');
+                        alert('You won!');
                         document.location.reload();
                     }
                 }
@@ -131,7 +131,7 @@ function init(){
             dy = -dy;
         } else {
             
-            alert('Peli loppui!');
+            alert('Gme ended!');
             document.location.reload();
         }
     }
