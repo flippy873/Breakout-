@@ -131,7 +131,7 @@ function init(){
             dy = -dy;
         } else {
             
-            alert('Gme ended!');
+            alert('Game ended!');
             document.location.reload();
         }
     }
